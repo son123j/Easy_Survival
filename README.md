@@ -3,6 +3,6 @@
 
 # 조합법
 
-
+![diamond_pickexe.png](./img/diamond_pickexe.png)
 
 # 기타
