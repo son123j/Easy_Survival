@@ -5,6 +5,7 @@
 
 # 조합법
 
+![experience_bottle.png](./img/experience_bottle.png)
 ![diamond_pickexe.png](./img/diamond_pickexe.png)
 
 # 기타
