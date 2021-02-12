@@ -1,0 +1,8 @@
+main : com.boy0710boy.Easy_Survival.github.plugin.Main
+name : Easy_Survival
+version : 1.10.3
+api-version : 1.16
+
+commands:
+  
+  
