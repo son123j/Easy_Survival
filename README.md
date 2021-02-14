@@ -3,6 +3,10 @@
 
 # 기능
 
+- 다이아몬드 곡괭이 조합법
+- 인첸트병 조합법
+- 겉날개 조합법
+
 # 조합법
 
 ![experience_bottle.png](./img/experience_bottle.png)
