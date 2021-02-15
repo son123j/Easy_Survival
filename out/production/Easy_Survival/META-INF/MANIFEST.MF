@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.boy0710boy.Easy_Survival.github.plugin.Main
+

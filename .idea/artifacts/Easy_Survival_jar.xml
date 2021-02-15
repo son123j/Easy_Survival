@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Easy_Survival:jar">
+    <output-path>$USER_HOME$/Desktop/javaPlugin/easy_jar</output-path>
+    <root id="archive" name="Easy_Survival.jar">
+      <element id="module-output" name="Easy_Survival" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javaPlugin/버킷 파일/spigot-1.16.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
