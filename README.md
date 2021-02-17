@@ -29,6 +29,6 @@
 ![chicken_spawn_egg.png](./img/chicken_spawn_egg.png)
 ![villager_spawn_egg.png](./img/villager_spawn_egg.png) 
 ![phantom_spawn egg.png](./img/phantom_spawn_egg.png)
-![ball.PNG](./img/ball.PNG)
+![bell.png](./img/bell.png)
 # 기타
 
