@@ -1,9 +1,13 @@
 package com.boy0710boy.Easy_Survival.github.plugin;
 
 import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Creature;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
@@ -63,6 +67,14 @@ public class Main extends JavaPlugin implements Listener {
 				.shape(new String[]{"   ","!!!"," @ "})
 				.setIngredient('!', Material.LEATHER)
 				.setIngredient('@', Material.LEAD);
+
+		ShapedRecipe chicken_egg = new ShapedRecipe(new ItemStack(Material.CHICKEN_SPAWN_EGG))
+				.shape(new String[]{"!@!","#/#"," * "})
+				.setIngredient('!', Material.STICK)
+				.setIngredient('@', Material.DIAMOND_HELMET)
+				.setIngredient('/', Material.CHICKEN)
+				.setIngredient('#', Material.FEATHER)
+				.setIngredient('*', Material.DIAMOND_BOOTS);
 		
 		getServer().addRecipe(dia_pickexe);
 		getServer().addRecipe(exp_bottle);
@@ -72,6 +84,9 @@ public class Main extends JavaPlugin implements Listener {
 		getServer().addRecipe(lead);
 		getServer().addRecipe(nameteg);
 		getServer().addRecipe(saddle);
+		getServer().addRecipe(chicken_egg);
+		//getServer().addRecipe(villager_egg);
+		//getServer().addRecipe(phantom_egg);
 	}
 	@Override
 	public void onDisable() {
@@ -86,6 +101,6 @@ public class Main extends JavaPlugin implements Listener {
         Player p = e.getPlayer();
         
 	}
-	
+
 }
 //test
