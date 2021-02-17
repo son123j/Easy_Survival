@@ -30,6 +30,5 @@
 ![villager_spawn_egg.png](./img/villager_spawn_egg.png) 
 ![phantom spawn egg.png](./img/phantom_spawn_egg.png)
 ![ball.png](./img/ball.png)
-
 # 기타
 
