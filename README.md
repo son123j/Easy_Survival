@@ -34,3 +34,4 @@
 ![nether_star.png](./img/nether_star.png)
 # 기타
 - 이 플러그인은 제작자 boyboy0710과 boy0710boy가 공동으로 개발한 플러그인입니다
+- 이지모드, 하드모드 추가예정
