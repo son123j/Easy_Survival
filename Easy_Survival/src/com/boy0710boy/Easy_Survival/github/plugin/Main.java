@@ -15,7 +15,9 @@ import java.util.Objects;
 
 public class Main extends JavaPlugin implements Listener {
 
-	String survival_mode = this.getConfig().getString("mode");
+	public static boolean easy;
+	public static boolean normal;
+	public static boolean hard;
 
 	@SuppressWarnings("deprecation")
 	public void onEnable() {
@@ -25,10 +27,15 @@ public class Main extends JavaPlugin implements Listener {
 		System.out.println("   최신버전 다운 사이트 : https://github.com/son123j/Easy_Survival");
 		System.out.println("--------------------------------------------------------------");
 
+		getServer().getPluginManager().registerEvents(this, this);
+
 		//config.yml
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 
+		easy = getConfig().getBoolean("easy");
+		normal = getConfig().getBoolean("normal");
+		hard = getConfig().getBoolean("hard");
 
 		ShapedRecipe dia_pickexe = new ShapedRecipe(new ItemStack(Material.DIAMOND_PICKAXE))
 				.shape(new String[]{"~~~"," ! "," ! "})
@@ -150,9 +157,18 @@ public class Main extends JavaPlugin implements Listener {
 
 		if(cmd.getName().equalsIgnoreCase("mode")) {
 
-			sender.sendMessage(Objects.requireNonNull(getConfig().getString("mode")));
+			if(easy = true) {
+				sender.sendMessage("mode = easy");
+			}
+			if(normal = true) {
+				sender.sendMessage("mode = noraml");
+			}
+			if(hard = true) {
+				sender.sendMessage("mode = hard");
+			}
 
 		}
+
 
 		return false;
 	}
