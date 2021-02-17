@@ -95,7 +95,13 @@ public class Main extends JavaPlugin implements Listener {
 				.setIngredient('!', Material.HOPPER_MINECART)
 				.setIngredient('~', Material.EMERALD_BLOCK)
 				.setIngredient('#', Material.PHANTOM_MEMBRANE);
-		
+
+		ShapedRecipe ball = new ShapedRecipe(new ItemStack(Material.PHANTOM_SPAWN_EGG))
+				.shape(new String[]{"ABA","ACA","A A"})
+				.setIngredient('A', Material.STONE)
+				.setIngredient('B', Material.STICK)
+				.setIngredient('C', Material.GOLD_INGOT);
+
 		getServer().addRecipe(dia_pickexe);
 		getServer().addRecipe(exp_bottle);
 		getServer().addRecipe(elytra);
@@ -107,6 +113,7 @@ public class Main extends JavaPlugin implements Listener {
 		getServer().addRecipe(chicken_egg);
 		getServer().addRecipe(villager_egg);
 		getServer().addRecipe(phantom_egg);
+		//getServer().addRecipe(ball);
 	}
 	@Override
 	public void onDisable() {
