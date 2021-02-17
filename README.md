@@ -1,5 +1,5 @@
 # Easy_Survival
-- 제작자 : boy0710boy,boybyo0710
+- 제작자 : boy0710boy,boyboyo0710
 
 # 기능
 
