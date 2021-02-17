@@ -96,10 +96,15 @@ public class Main extends JavaPlugin implements Listener {
 				.setIngredient('~', Material.EMERALD_BLOCK)
 				.setIngredient('#', Material.PHANTOM_MEMBRANE);
 
-		ShapedRecipe ball = new ShapedRecipe(new ItemStack(Material.PHANTOM_SPAWN_EGG))
+		ShapedRecipe bell = new ShapedRecipe(new ItemStack(Material.BELL))
 				.shape(new String[]{"ABA","ACA","A A"})
 				.setIngredient('A', Material.STONE)
 				.setIngredient('B', Material.STICK)
+				.setIngredient('C', Material.GOLD_INGOT);
+
+		ShapedRecipe star = new ShapedRecipe(new ItemStack(Material.NETHER_STAR))
+				.shape(new String[]{" A ","ACA"," A "})
+				.setIngredient('A', Material.DIAMOND)
 				.setIngredient('C', Material.GOLD_INGOT);
 
 		getServer().addRecipe(dia_pickexe);
@@ -113,7 +118,8 @@ public class Main extends JavaPlugin implements Listener {
 		getServer().addRecipe(chicken_egg);
 		getServer().addRecipe(villager_egg);
 		getServer().addRecipe(phantom_egg);
-		//getServer().addRecipe(ball);
+		getServer().addRecipe(bell);
+		getServer().addRecipe(star);
 	}
 	@Override
 	public void onDisable() {
