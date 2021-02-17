@@ -31,6 +31,6 @@
 ![villager_spawn_egg.png](./img/villager_spawn_egg.png) 
 ![phantom_spawn egg.png](./img/phantom_spawn_egg.png)
 ![bell.png](./img/bell.png)
-![nether_star.PNG](./img/nether_star.PNG)
+![nether_star.png](./img/nether_star.png)
 # 기타
 - 이 플러그인은 제작자 boyboy0710과 boy0710boy가 공동으로 개발한 플러그인입니다
