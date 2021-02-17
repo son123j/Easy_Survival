@@ -13,6 +13,7 @@
 - 안장 조합법
 - 닭 스폰알 조합법
 - 주민 스폰알 조합법
+- 펜텀 스폰알 조합법
 
 # 조합법
 
@@ -26,6 +27,7 @@
 ![saddle.png](./img/saddle.png)
 ![chicken_spawn_egg.png](./img/chicken_spawn_egg.png)
 ![villager_spawn_egg.png](./img/villager_spawn_egg.png)
+![phantom spawn egg.png](./img/phantom spawn egg.png)
 
 # 기타
 
