@@ -87,6 +87,12 @@ public class Main extends JavaPlugin implements Listener {
 				.setIngredient('&', Material.GOLDEN_HELMET)
 				.setIngredient('*', Material.GOLDEN_CHESTPLATE)
 				.setIngredient('(', Material.GOLDEN_LEGGINGS);
+
+		ShapedRecipe phantom_egg = new ShapedRecipe(new ItemStack(Material.PHANTOM_SPAWN_EGG))
+				.shape(new String[]{" ~ ","#!#","# #"})
+				.setIngredient('!', Material.HOPPER_MINECART)
+				.setIngredient('~', Material.EMERALD_BLOCK)
+				.setIngredient('#', Material.PHANTOM_MEMBRANE);
 		
 		getServer().addRecipe(dia_pickexe);
 		getServer().addRecipe(exp_bottle);
@@ -98,7 +104,7 @@ public class Main extends JavaPlugin implements Listener {
 		getServer().addRecipe(saddle);
 		getServer().addRecipe(chicken_egg);
 		getServer().addRecipe(villager_egg);
-		//getServer().addRecipe(phantom_egg);
+		getServer().addRecipe(phantom_egg);
 	}
 	@Override
 	public void onDisable() {
