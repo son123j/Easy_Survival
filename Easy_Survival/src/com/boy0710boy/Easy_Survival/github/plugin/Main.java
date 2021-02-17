@@ -3,19 +3,19 @@ package com.boy0710boy.Easy_Survival.github.plugin;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Creature;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Objects;
+
 public class Main extends JavaPlugin implements Listener {
 
-	//test
+	String survival_mode = this.getConfig().getString("mode");
 
 	@SuppressWarnings("deprecation")
 	public void onEnable() {
@@ -24,7 +24,12 @@ public class Main extends JavaPlugin implements Listener {
 		System.out.println("                  플러그인 제작자 : boy0710boy, boyboy0710");
 		System.out.println("   최신버전 다운 사이트 : https://github.com/son123j/Easy_Survival");
 		System.out.println("--------------------------------------------------------------");
-		
+
+		//config.yml
+		getConfig().options().copyDefaults(true);
+		saveConfig();
+
+
 		ShapedRecipe dia_pickexe = new ShapedRecipe(new ItemStack(Material.DIAMOND_PICKAXE))
 				.shape(new String[]{"~~~"," ! "," ! "})
 				.setIngredient('!', Material.DIAMOND)
@@ -128,6 +133,10 @@ public class Main extends JavaPlugin implements Listener {
 		System.out.println("                   플러그인 제작자 : boy0710boy, boyboy0710");
 		System.out.println("   최신버전 다운 사이트 : https://github.com/son123j/Easy_Survival");
 		System.out.println("---------------------------------------------------------------");
+
+		//config.yml
+		saveConfig();
+
 	}
 	@EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
@@ -135,4 +144,16 @@ public class Main extends JavaPlugin implements Listener {
         
 	}
 
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		Player p = (Player) sender;
+
+		if(cmd.getName().equalsIgnoreCase("mode")) {
+
+			sender.sendMessage(Objects.requireNonNull(getConfig().getString("mode")));
+
+		}
+
+		return false;
+	}
 }
