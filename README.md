@@ -11,6 +11,8 @@
 - 끈 조합법
 - 이름표 조합법
 - 안장 조합법
+- 닭 스폰알 조합법
+- 주민 스폰알 조합법
 
 # 조합법
 
@@ -22,6 +24,8 @@
 ![lead.png](./img/lead.png)
 ![nameteg.png](./img/nameteg.png)
 ![saddle.png](./img/saddle.png)
+![chicken_spawn_egg.png](./img/chicken_spawn_egg.png)
+![villager_spawn_egg.png](./img/villager_spawn_egg.png)
 
 # 기타
 
