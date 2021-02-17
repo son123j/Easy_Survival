@@ -15,6 +15,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
 
+	//test
+
 	@SuppressWarnings("deprecation")
 	public void onEnable() {
 		System.out.println("--------------------------------------------------------------");
