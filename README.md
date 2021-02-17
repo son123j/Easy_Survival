@@ -33,4 +33,4 @@
 ![bell.png](./img/bell.png)
 ![nether_star.PNG](./img/nether_star.PNG)
 # 기타
-
+- 이 플러그인은 제작자 boyboy0710과 boy0710boy가 공동으로 개발한 플러그인입니다
