@@ -75,6 +75,18 @@ public class Main extends JavaPlugin implements Listener {
 				.setIngredient('/', Material.CHICKEN)
 				.setIngredient('#', Material.FEATHER)
 				.setIngredient('*', Material.DIAMOND_BOOTS);
+
+		ShapedRecipe villager_egg = new ShapedRecipe(new ItemStack(Material.VILLAGER_SPAWN_EGG))
+				.shape(new String[]{"!$&","@%*","#^("})
+				.setIngredient('!', Material.DIAMOND_HELMET)
+				.setIngredient('@', Material.DIAMOND_CHESTPLATE)
+				.setIngredient('#', Material.DIAMOND_LEGGINGS)
+				.setIngredient('$', Material.IRON_HELMET)
+				.setIngredient('%', Material.IRON_CHESTPLATE)
+				.setIngredient('^', Material.IRON_LEGGINGS)
+				.setIngredient('&', Material.GOLDEN_HELMET)
+				.setIngredient('*', Material.GOLDEN_CHESTPLATE)
+				.setIngredient('(', Material.GOLDEN_LEGGINGS);
 		
 		getServer().addRecipe(dia_pickexe);
 		getServer().addRecipe(exp_bottle);
@@ -85,7 +97,7 @@ public class Main extends JavaPlugin implements Listener {
 		getServer().addRecipe(nameteg);
 		getServer().addRecipe(saddle);
 		getServer().addRecipe(chicken_egg);
-		//getServer().addRecipe(villager_egg);
+		getServer().addRecipe(villager_egg);
 		//getServer().addRecipe(phantom_egg);
 	}
 	@Override
