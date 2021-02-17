@@ -15,6 +15,7 @@
 - 주민 스폰알 조합법
 - 펜텀 스폰알 조합법
 - 종 조합법
+- 네더의 별 조합법
 
 # 조합법
 
@@ -30,5 +31,6 @@
 ![villager_spawn_egg.png](./img/villager_spawn_egg.png) 
 ![phantom_spawn egg.png](./img/phantom_spawn_egg.png)
 ![bell.png](./img/bell.png)
+![nether_star.PNG](./img/nether_star.PNG)
 # 기타
 
