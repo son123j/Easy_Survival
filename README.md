@@ -1,5 +1,5 @@
 # Easy_Survival
-- 제작자 : boy0710boy  
+- 제작자 : boy0710boy,boyboy0710
 
 # 기능
 
@@ -14,6 +14,7 @@
 - 닭 스폰알 조합법
 - 주민 스폰알 조합법
 - 펜텀 스폰알 조합법
+- 종 조합법
 
 # 조합법
 
@@ -27,7 +28,7 @@
 ![saddle.png](./img/saddle.png)
 ![chicken_spawn_egg.png](./img/chicken_spawn_egg.png)
 ![villager_spawn_egg.png](./img/villager_spawn_egg.png) 
-![phantom spawn egg.png](./img/phantom_spawn _egg.png)
-
+![phantom_spawn egg.png](./img/phantom_spawn_egg.png)
+![ball.PNG](./img/ball.PNG)
 # 기타
 
