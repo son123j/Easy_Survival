@@ -15,10 +15,6 @@ import java.util.Objects;
 
 public class Main extends JavaPlugin implements Listener {
 
-	public static boolean easy;
-	public static boolean normal;
-	public static boolean hard;
-
 	@SuppressWarnings("deprecation")
 	public void onEnable() {
 		System.out.println("--------------------------------------------------------------");
@@ -32,10 +28,6 @@ public class Main extends JavaPlugin implements Listener {
 		//config.yml
 		getConfig().options().copyDefaults(true);
 		saveConfig();
-
-		easy = getConfig().getBoolean("easy");
-		normal = getConfig().getBoolean("normal");
-		hard = getConfig().getBoolean("hard");
 
 		ShapedRecipe dia_pickexe = new ShapedRecipe(new ItemStack(Material.DIAMOND_PICKAXE))
 				.shape(new String[]{"~~~"," ! "," ! "})
@@ -148,22 +140,33 @@ public class Main extends JavaPlugin implements Listener {
 	@EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        
+		System.out.println();
 	}
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		Player p = (Player) sender;
 
+		if(label.equalsIgnoreCase("test2")) {
+			System.out.println("tset2");
+		}
+
+		if(label.equalsIgnoreCase("test")) {
+			sender.sendMessage(getConfig().getString("test"));
+		}
+
 		if(cmd.getName().equalsIgnoreCase("mode")) {
 
-			if(easy = true) {
+			if(getConfig().getBoolean("easy") == true) {
+				System.out.println("mode = easy");
 				sender.sendMessage("mode = easy");
 			}
-			if(normal = true) {
+			else if(getConfig().getBoolean("normal") == true) {
+				System.out.println("mode = normal");
 				sender.sendMessage("mode = noraml");
 			}
-			if(hard = true) {
+			else if(getConfig().getBoolean("hard") == true) {
+				System.out.println("mode = hard");
 				sender.sendMessage("mode = hard");
 			}
 
